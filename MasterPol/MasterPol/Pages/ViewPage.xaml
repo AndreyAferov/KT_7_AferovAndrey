@@ -1,0 +1,53 @@
+﻿<Page x:Class="MasterPol.Pages.ViewPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MasterPol.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      MinHeight="450"
+      MinWidth="800"
+      Title="ViewPage"
+      Background="white">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ListView x:Name="Listing">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="350"></ColumnDefinition>
+                            <ColumnDefinition Width="150"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <TextBlock>
+                        <Run Text="{Binding Partner.PartnetName.NamePartner}"/>
+                        <Run Text="|"/>
+                        <Run Text="{Binding Partner.OrganizeName.NameOrg}"/>
+                            </TextBlock>
+                            <TextBlock Text="{Binding Partner.DirectorName.NameDir, StringFormat={}Директор: {0}}"></TextBlock>
+                            <TextBlock Text="{Binding Partner.PhoneNumber, StringFormat={}Номер телефона: {0}}"></TextBlock>
+                            <TextBlock Text="{Binding Partner.Rate, StringFormat={}Рейтинг: {0}}"></TextBlock>
+                        </StackPanel>
+                        <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Discount, StringFormat={}Скидка: {0}%}"></TextBlock>
+
+                        <Button x:Name="EditButton" Grid.Column="2" 
+                                Content="Редактировать"
+                                Click="EditButton_Click"></Button>
+                        <Button x:Name="HistoryButton" Grid.Column="3" 
+                                Content="История реализации" Margin="10"
+                                Click="HistoryButton_Click"></Button>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="AddButton" Grid.Row="1" Content="Добавить"
+                Click="AddButton_Click"></Button>    </Grid>
+</Page>
