@@ -3,23 +3,35 @@
   "WorkspaceRootPath": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\masterpol\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|solutionrelative:masterpol\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|c:\\users\\\u0430\u043D\u0434\u0440\u0435\u0439\\desktop\\master pol\\git\\masterpol\\masterpol\\pages\\addedit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|solutionrelative:masterpol\\pages\\addedit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|c:\\users\\\u0430\u043D\u0434\u0440\u0435\u0439\\desktop\\master pol\\git\\masterpol\\masterpol\\pages\\addedit.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\masterpol\\pages\\addedit.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|solutionrelative:masterpol\\pages\\addedit.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|c:\\users\\\u0430\u043D\u0434\u0440\u0435\u0439\\desktop\\master pol\\git\\masterpol\\masterpol\\pages\\viewpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\masterpol\\pages\\viewpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|solutionrelative:masterpol\\pages\\viewpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|c:\\users\\\u0430\u043D\u0434\u0440\u0435\u0439\\desktop\\master pol\\git\\masterpol\\masterpol\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|solutionrelative:masterpol\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\masterpol\\pages\\viewpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|solutionrelative:masterpol\\pages\\viewpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|c:\\users\\\u0430\u043D\u0434\u0440\u0435\u0439\\desktop\\master pol\\git\\masterpol\\masterpol\\data\\model1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\masterpol\\classes\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|solutionrelative:masterpol\\classes\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\masterpol\\data\\model1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|solutionrelative:masterpol\\data\\model1.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|c:\\users\\\u0430\u043D\u0434\u0440\u0435\u0439\\desktop\\master pol\\git\\masterpol\\masterpol\\data\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "AbsoluteMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\masterpol\\data\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|solutionrelative:masterpol\\data\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
@@ -27,16 +39,8 @@
       "RelativeMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|solutionrelative:masterpol\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\masterpol\\pages\\viewpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|solutionrelative:masterpol\\pages\\viewpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\masterpol\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|solutionrelative:masterpol\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\masterpol\\classes\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|solutionrelative:masterpol\\classes\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B6682ACF-59B5-4A6B-9E1E-B1BD7F5C994E}|MasterPol\\MasterPol.csproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\masterpol\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,6 +70,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddEdit.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\MasterPol\\Pages\\AddEdit.xaml.cs",
+              "RelativeDocumentMoniker": "MasterPol\\Pages\\AddEdit.xaml.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\MasterPol\\Pages\\AddEdit.xaml.cs",
+              "RelativeToolTip": "MasterPol\\Pages\\AddEdit.xaml.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAYwFQAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T07:53:01.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "AddEdit.xaml",
               "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\MasterPol\\Pages\\AddEdit.xaml",
@@ -78,32 +95,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Model1.Context.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\MasterPol\\Data\\Model1.Context.cs",
-              "RelativeDocumentMoniker": "MasterPol\\Data\\Model1.Context.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\MasterPol\\Data\\Model1.Context.cs",
-              "RelativeToolTip": "MasterPol\\Data\\Model1.Context.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T12:21:30.186Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Model1.edmx [Diagram1]",
               "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\MasterPol\\Data\\Model1.edmx",
               "RelativeDocumentMoniker": "MasterPol\\Data\\Model1.edmx",
               "ToolTip": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\MasterPol\\Data\\Model1.edmx [Diagram1]",
               "RelativeToolTip": "MasterPol\\Data\\Model1.edmx [Diagram1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2024-11-11T12:21:05.976Z",
-              "EditorCaption": " [Diagram1]"
+              "WhenOpened": "2024-11-11T12:21:05.976Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "App.config",
               "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\MasterPol\\App.config",
               "RelativeDocumentMoniker": "MasterPol\\App.config",
@@ -111,25 +114,24 @@
               "RelativeToolTip": "MasterPol\\App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-11-10T17:59:11.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-10T17:59:11.573Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ViewPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\MasterPol\\Pages\\ViewPage.xaml.cs",
               "RelativeDocumentMoniker": "MasterPol\\Pages\\ViewPage.xaml.cs",
               "ToolTip": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\MasterPol\\Pages\\ViewPage.xaml.cs",
               "RelativeToolTip": "MasterPol\\Pages\\ViewPage.xaml.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAYwEEAAAA2AAAA",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAvwD0AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-10T17:19:25.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "ViewPage.xaml",
               "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\MasterPol\\Pages\\ViewPage.xaml",
               "RelativeDocumentMoniker": "MasterPol\\Pages\\ViewPage.xaml",
@@ -141,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "Manager.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\MasterPol\\Classes\\Manager.cs",
               "RelativeDocumentMoniker": "MasterPol\\Classes\\Manager.cs",
@@ -149,11 +151,12 @@
               "RelativeToolTip": "MasterPol\\Classes\\Manager.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T16:46:48.172Z"
+              "WhenOpened": "2024-11-10T16:46:48.172Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\MasterPol\\App.xaml",
               "RelativeDocumentMoniker": "MasterPol\\App.xaml",
@@ -165,18 +168,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
+              "Title": "Model1.Context.cs",
+              "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\MasterPol\\Data\\Model1.Context.cs",
+              "RelativeDocumentMoniker": "MasterPol\\Data\\Model1.Context.cs",
+              "ToolTip": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\MasterPol\\Data\\Model1.Context.cs",
+              "RelativeToolTip": "MasterPol\\Data\\Model1.Context.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T12:21:30.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\MasterPol\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MasterPol\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\MasterPol\\MainWindow.xaml",
               "RelativeToolTip": "MasterPol\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-10T16:27:50.308Z"
+              "WhenOpened": "2024-11-10T16:27:50.308Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\Desktop\\Master Pol\\git\\MasterPol\\MasterPol\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MasterPol\\MainWindow.xaml.cs",

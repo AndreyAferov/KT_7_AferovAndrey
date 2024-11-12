@@ -32,13 +32,21 @@
         <Label Content="Email" Grid.Row="2" Grid.Column="2"></Label>
 
         <TextBox x:Name="NameTextBox" Grid.Row="0" Grid.Column="1"></TextBox>
-        <ComboBox x:Name="Partner" Grid.Row="1" Grid.Column="1"
-                      DisplayMemberPath="OrganizeName"></ComboBox>
+        <ComboBox x:Name="ComboPar" Grid.Row="1" Grid.Column="1"
+                      DisplayMemberPath="NamePartner"></ComboBox>
         <TextBox x:Name="RatingTextBox" Grid.Row="2" Grid.Column="1"></TextBox>
         <TextBox x:Name="AdressTextBox" Grid.Row="3" Grid.Column="1"></TextBox>
         <TextBox x:Name="FIOTextBox" Grid.Row="0" Grid.Column="3"></TextBox>
         <TextBox x:Name="PhoneTextBox" Grid.Row="1" Grid.Column="3"></TextBox>
         <TextBox x:Name="EmailTextBox" Grid.Row="2" Grid.Column="3"></TextBox>
 
+        <Button x:Name="BackButton" Grid.Row="4"
+        Content="Назад" HorizontalAlignment="Left"
+        Margin="10"
+        Click="BackButton_Click"></Button>
+        <Button x:Name="SaveButton" Grid.Row="4" Grid.Column="3"
+        Content="Сохранить" HorizontalAlignment="Right"
+        Margin="10"
+        Click="SaveButton_Click"></Button>
     </Grid>
 </Page>

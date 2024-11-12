@@ -53,7 +53,13 @@ namespace MasterPol.Pages
 
         private void EditButton_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new AddEdit());
+            Button editButton = sender as Button;
+            var partnerData = editButton.DataContext;
+            if (partnerData != null)
+            {
+                var partner = (partnerData as dynamic).Partner;
+                Classes.Manager.MainFrame.Navigate(new Pages.AddEdit(partner));
+            }
         }
 
         private void HistoryButton_Click(object sender, RoutedEventArgs e)
@@ -63,7 +69,7 @@ namespace MasterPol.Pages
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new AddEdit());
+            Manager.MainFrame.Navigate(new AddEdit(null));
         }
     }
 }
