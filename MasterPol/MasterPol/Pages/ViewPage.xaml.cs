@@ -34,17 +34,20 @@ namespace MasterPol.Pages
                                     join product in Data.MasterPolEntities.GetContext().PartnerProducts
                                     on partner.Id equals product.PartnerName
                                     group product by partner into g
-                                    select new
+                                    select new 
                                     {
                                         Partner = g.Key,
                                         Discount = CalculateDiscount(g.Sum(p => p.CountProduct))
                                     }).ToList();
 
-            Listing.ItemsSource = partnerDiscounts;
+
+            Listing.ItemsSource = partnerDiscounts; 
         }
+
 
         private int CalculateDiscount(int totalCount)
         {
+            if (String.IsNullOrEmpty(totalCount.ToString())) return 0;
             if (totalCount < 10000) return 0;
             if (totalCount >= 10000 && totalCount < 50000) return 5;
             if (totalCount >= 50000 && totalCount < 300000) return 10;
@@ -64,7 +67,17 @@ namespace MasterPol.Pages
 
         private void HistoryButton_Click(object sender, RoutedEventArgs e)
         {
+            Button historyButton = sender as Button;
+            var partnerData = historyButton.DataContext;
 
+            if (partnerData != null)
+            {
+                var partner = (partnerData as dynamic).Partner;
+                Classes.Manager.MainFrame.Navigate(new History(partner));
+            }
+            else
+            {
+            }
         }
 
         private void AddButton_Click(object sender, RoutedEventArgs e)

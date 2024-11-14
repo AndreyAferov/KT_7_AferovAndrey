@@ -47,6 +47,8 @@ namespace MasterPol.Pages
         {
             try
             {
+                IdTextBox.Visibility = Visibility.Hidden;
+                IdLabel.Visibility = Visibility.Hidden;
                 var list = Data.MasterPolEntities.GetContext().PartnetName.ToList();
                 ComboPar.ItemsSource = list;
 
@@ -56,25 +58,29 @@ namespace MasterPol.Pages
                     ComboPar.SelectedItem = null;
                     NameTextBox.Text = string.Empty;
                     RatingTextBox.Text = string.Empty;
-                    AdressTextBox.Text = string.Empty;
                     FIOTextBox.Text = string.Empty;
                     PhoneTextBox.Text = string.Empty;
                     EmailTextBox.Text = string.Empty;
                 }
                 else if (FlagAddorEdit == "edit")
                 {
-                    NameTextBox.Text = _currentpartner.PartnetName.NamePartner.ToString();
+                    NameTextBox.Text = _currentpartner.OrganizeName.NameOrg.ToString();
                     RatingTextBox.Text = _currentpartner.Rate.ToString();
-                    AdressTextBox.Text = _currentpartner.Adress.ToString();
-                    FIOTextBox.Text = _currentpartner.DirectorName.NameDir.ToString();
-                    PhoneTextBox.Text = _currentpartner.PhoneNumber.ToString();
-                    EmailTextBox.Text = _currentpartner.Email.ToString();
+                    RegionTextBox.Text = _currentpartner.Adress1.Regions1.NameRegion;
+                    CityTextBox.Text = _currentpartner.Adress1.Countrys.NameCountry.ToString();
+                    StreetTextBox.Text = _currentpartner.Adress1.Strets.NameStreet.ToString();
+                    HouseNumTextBox.Text = _currentpartner.Adress1.HouseNum.ToString();
+                    IndexTextBox.Text = _currentpartner.Adress1.CountryIndex.NameCountry.ToString();
+                    FIOTextBox.Text = _currentpartner.DirectorName.NameDir;
+                    PhoneTextBox.Text = _currentpartner.PhoneNumber;
+                    EmailTextBox.Text = _currentpartner.Email;
+                    IdTextBox.Text = _currentpartner.Id.ToString();
                     ComboPar.SelectedItem = Data.MasterPolEntities.GetContext().PartnetName
-                    .FirstOrDefault(d => d.Id == _currentpartner.Id);
+                        .FirstOrDefault(d => d.Id == _currentpartner.Partner1);
                 }
             }
             catch { }
-       }
+        }
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             Manager.MainFrame.Navigate(new ViewPage());
@@ -91,16 +97,31 @@ namespace MasterPol.Pages
                 }
                 if (ComboPar.SelectedItem == null)
                 {
-                    errors.AppendLine("Выберите тип партнера");
+                    errors.AppendLine("Выберите партнера");
                 }
                 if (string.IsNullOrEmpty(RatingTextBox.Text))
                 {
                     errors.AppendLine("Заполните рейтинг");
                 }
-
-                if (string.IsNullOrEmpty(AdressTextBox.Text))
+                if (string.IsNullOrEmpty(RegionTextBox.Text))
                 {
-                    errors.AppendLine("Заполните адрес");
+                    errors.AppendLine("Заполните Регион");
+                }
+                if (string.IsNullOrEmpty(CityTextBox.Text))
+                {
+                    errors.AppendLine("Заполните Город");
+                }
+                if (string.IsNullOrEmpty(StreetTextBox.Text))
+                {
+                    errors.AppendLine("Заполните Улицу");
+                }
+                if (string.IsNullOrEmpty(HouseNumTextBox.Text))
+                {
+                    errors.AppendLine("Заполните номер дома");
+                }
+                if (string.IsNullOrEmpty(IndexTextBox.Text))
+                {
+                    errors.AppendLine("Заполните индекс");
                 }
                 if (string.IsNullOrEmpty(FIOTextBox.Text))
                 {
@@ -110,7 +131,6 @@ namespace MasterPol.Pages
                 {
                     errors.AppendLine("Заполните номер телефона");
                 }
-
                 if (string.IsNullOrEmpty(EmailTextBox.Text))
                 {
                     errors.AppendLine("Заполните Email");
@@ -122,20 +142,24 @@ namespace MasterPol.Pages
                     return;
                 }
 
-
                 var selectedCategory = ComboPar.SelectedItem as Data.PartnetName;
-                _currentpartner.Id = Data.MasterPolEntities.GetContext().PartnetName.Where(p => p.Id == selectedCategory.Id).FirstOrDefault().Id;
-                _currentpartner.Rate = (RatingTextBox.Text);
+                if (selectedCategory == null)
+                {
+                    MessageBox.Show("Выберите партнера", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
+
+                _currentpartner.Partner1 = selectedCategory.Id;
+                _currentpartner.Rate = RatingTextBox.Text;
                 _currentpartner.PhoneNumber = PhoneTextBox.Text;
                 _currentpartner.Email = EmailTextBox.Text;
-
 
                 var searchDirector = (from item in Data.MasterPolEntities.GetContext().DirectorName
                                       where item.NameDir == FIOTextBox.Text
                                       select item).FirstOrDefault();
                 if (searchDirector != null)
                 {
-                    _currentpartner.Id = searchDirector.id;
+                    _currentpartner.Director = searchDirector.id;
                 }
                 else
                 {
@@ -145,52 +169,83 @@ namespace MasterPol.Pages
                     };
                     Data.MasterPolEntities.GetContext().DirectorName.Add(directors);
                     Data.MasterPolEntities.GetContext().SaveChanges();
-                    _currentpartner.Id = directors.id;
+                    _currentpartner.Director = directors.id;
                 }
 
-                if (errors.Length > 0)
-                {
-                    MessageBox.Show(errors.ToString(), "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
-                    return;
-                }
+                var searchPartnerName = Data.MasterPolEntities.GetContext().OrganizeName
+                                        .FirstOrDefault(item => item.NameOrg == NameTextBox.Text);
 
-
-                var searchPartnerName = (from item in Data.MasterPolEntities.GetContext().PartnetName
-                                         where item.NamePartner == NameTextBox.Text
-                                         select item).FirstOrDefault();
                 if (searchPartnerName != null)
                 {
-                    _currentpartner.Id = searchPartnerName.Id;
+                    _currentpartner.Name = searchPartnerName.Id;
                 }
                 else
                 {
-                    Data.PartnetName partnerName = new Data.PartnetName()
+                    var partnerName = new Data.OrganizeName
                     {
-                        NamePartner = NameTextBox.Text
+                        NameOrg = NameTextBox.Text
                     };
-                    Data.MasterPolEntities.GetContext().PartnetName.Add(partnerName);
-                    Data.MasterPolEntities.GetContext().SaveChanges();
-                    _currentpartner.Id = partnerName.Id;
+
+                    Data.MasterPolEntities.GetContext().OrganizeName.Add(partnerName);
+                    Data.MasterPolEntities.GetContext().SaveChanges(); 
+
+                    _currentpartner.Name = partnerName.Id; 
                 }
 
 
+                int houseNum = int.Parse(HouseNumTextBox.Text);
 
+                var address = MasterPolEntities.GetContext().Adress
+                    .FirstOrDefault(a => a.Regions.NameRegion == RegionTextBox.Text &&
+                                         a.Countrys.NameCountry == CityTextBox.Text &&
+                                         a.Strets.NameStreet == StreetTextBox.Text &&
+                                         a.HouseNum == houseNum &&
+                                         a.CountryIndex.NameCountry == IndexTextBox.Text);
+
+                if (address == null)
+                {
+                    address = new Adress
+                    {
+                        Regions = new Regions { NameRegion = RegionTextBox.Text },
+                        Countrys = new Countrys { NameCountry = CityTextBox.Text },
+                        Strets = new Strets { NameStreet = StreetTextBox.Text },
+                        HouseNum = houseNum,
+                        CountryIndex = new CountryIndex { NameCountry = IndexTextBox.Text }
+                    };
+
+                    MasterPolEntities.GetContext().Adress.Add(address);
+                    MasterPolEntities.GetContext().SaveChanges();
+                }
+
+                _currentpartner.Adress1 = address;
+
+
+                if (address.Id != 0)
+                {
+                    _currentpartner.Adress1 = address;
+                }
+                else
+                {
+                    MessageBox.Show("Ошибка сохранения адреса.", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
                 if (FlagAddorEdit == "add")
                 {
                     Data.MasterPolEntities.GetContext().Partner.Add(_currentpartner);
-                    Data.MasterPolEntities.GetContext().SaveChanges();
-                    MessageBox.Show("Успешно добавлено!", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Успешно добавлено", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                    Manager.MainFrame.Navigate(new ViewPage());
                 }
                 else if (FlagAddorEdit == "edit")
                 {
-                    Data.MasterPolEntities.GetContext().SaveChanges();
-                    MessageBox.Show("Успешно изменено!", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Успешно сохранено", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
                     Manager.MainFrame.Navigate(new ViewPage());
                 }
-            }
-            catch (Exception ex)
-            {
 
+                Data.MasterPolEntities.GetContext().SaveChanges();
+
+            }
+            catch (Exception)
+            {
             }
         }
     }

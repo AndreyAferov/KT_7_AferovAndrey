@@ -25,3 +25,5 @@ C:\Users\Андрей\Desktop\Master Pol\git\MasterPol\MasterPol\obj\Debug\Pages
 C:\Users\Андрей\Desktop\Master Pol\git\MasterPol\MasterPol\obj\Debug\MasterPol.csproj.Up2Date
 C:\Users\Андрей\Desktop\Master Pol\git\MasterPol\MasterPol\obj\Debug\Pages\AddEdit.g.cs
 C:\Users\Андрей\Desktop\Master Pol\git\MasterPol\MasterPol\obj\Debug\Pages\AddEdit.baml
+C:\Users\Андрей\Desktop\Master Pol\git\MasterPol\MasterPol\obj\Debug\Pages\History.g.cs
+C:\Users\Андрей\Desktop\Master Pol\git\MasterPol\MasterPol\obj\Debug\Pages\History.baml
